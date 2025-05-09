@@ -8,7 +8,7 @@ function generateLinks() {
 
     // Make an AJAX request to send the domain to the PHP script
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "api/woo.php", true);
+    xhr.open("POST", "woo.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function() {
