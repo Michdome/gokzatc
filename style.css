@@ -1,0 +1,141 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and text color */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000000; /* Black background for the entire page */
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo style */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+
+/* Container style */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #1f1f1f; /* Dark container */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title style with color-changing animation */
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    animation: colorChange 1s infinite;
+}
+
+/* Color-changing animation for the text */
+@keyframes colorChange {
+    0% { color: #FF6347; } /* Tomato */
+    25% { color: #1E90FF; } /* Dodger Blue */
+    50% { color: #32CD32; } /* Lime Green */
+    75% { color: #FFD700; } /* Gold */
+    100% { color: #FF4500; } /* Orange Red */
+}
+
+/* Color-changing animation for h3 text */
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: colorChangeText 1s infinite;
+}
+
+/* Keyframes for the color-changing animation */
+@keyframes colorChangeText {
+    0% { color: #FF6347; } /* Tomato */
+    25% { color: #1E90FF; } /* Dodger Blue */
+    50% { color: #32CD32; } /* Lime Green */
+    75% { color: #FFD700; } /* Gold */
+    100% { color: #FF4500; } /* Orange Red */
+}
+
+/* Label style */
+label {
+    color: #c1c1c1;
+    font-size: 1.1em;
+}
+
+/* Input and Textarea styles */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button styles */
+button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer style */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #bbb;
+    font-size: 0.9em;
+}
+
+/* Color-changing animation for footer text */
+footer p span {
+    animation: colorChangeFooter 1s infinite;
+}
+
+/* Color-changing animation for the footer text */
+@keyframes colorChangeFooter {
+    0% { color: #FF6347; } /* Tomato */
+    25% { color: #1E90FF; } /* Dodger Blue */
+    50% { color: #32CD32; } /* Lime Green */
+    75% { color: #FFD700; } /* Gold */
+    100% { color: #FF4500; } /* Orange Red */
+}
+
+/* Smooth scroll effect */
+button, input[type="text"], textarea {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
